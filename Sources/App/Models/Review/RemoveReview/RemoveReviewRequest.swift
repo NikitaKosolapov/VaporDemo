@@ -7,6 +7,6 @@
 
 import Vapor
 
-struct ProductByIdRequest: Content {
-    let id_product: Int
+struct RemoveReviewRequest: Content {
+    let id_comment: Int
 }

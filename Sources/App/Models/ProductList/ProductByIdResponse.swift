@@ -7,7 +7,7 @@
 
 import Vapor
 
-struct ProductListResponse: Content {
+struct ProductByIdResponse: Content {
     let result: Int
     let product_name: String
     let product_price: Int

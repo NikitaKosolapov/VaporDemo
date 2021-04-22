@@ -7,6 +7,7 @@
 
 import Vapor
 
-struct ProductByIdRequest: Content {
-    let id_product: Int
+struct WriteReviewRequest: Content {
+    let id_user: Int
+    let text: String
 }
