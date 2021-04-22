@@ -14,6 +14,6 @@ func routes(_ app: Application) throws {
     app.post("editUserData", use: controller.editUserData)
     app.post("login", use: controller.login)
     app.post("logout", use: controller.logout)
-
-    
+    app.get("getProductCatalog", use: controller.getProductCatalog)
+    app.get("getProductById", use: controller.getProductById)
 }
