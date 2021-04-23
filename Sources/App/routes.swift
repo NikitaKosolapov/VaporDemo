@@ -16,8 +16,8 @@ func routes(_ app: Application) throws {
     app.post("logout", use: authApiLibrary.logout)
 
     let productApiLibrary = ProductApiLibrary()
-    app.get("getProductCatalog", use: productApiLibrary.getProductCatalog)
-    app.get("getProductById", use: productApiLibrary.getProductById)
+    app.post("getProductCatalog", use: productApiLibrary.getProductCatalog)
+    app.post("getProductById", use: productApiLibrary.getProductById)
 
     let reviewApiLibrary = ReviewApiLibrary()
     app.post("writeReview", use: reviewApiLibrary.writeReview)
