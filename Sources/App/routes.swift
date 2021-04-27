@@ -23,4 +23,9 @@ func routes(_ app: Application) throws {
     app.post("writeReview", use: reviewApiLibrary.writeReview)
     app.post("approveReview", use: reviewApiLibrary.approveReview)
     app.post("removeReview", use: reviewApiLibrary.removeReview)
+
+    let basket = BasketApiLibrary()
+    app.post("addToBasket", use: basket.addToBasket)
+    app.post("deleteFromBasket", use: basket.deleteFromBasket)
+    app.post("getBasket", use: basket.getBasket)
 }

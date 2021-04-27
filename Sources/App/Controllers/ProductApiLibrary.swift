@@ -15,9 +15,9 @@ class ProductApiLibrary {
 
         print(body)
 
-        let response = [Product(id_product: 1315324, product_name: "iMac M1 24", price: 169990),
-                        Product(id_product: 3532311, product_name: "Mac mini M1", price: 118990),
-                        Product(id_product: 3145114, product_name: "MacBook Pro 13 M1", price: 159990)]
+        let response = [Product(id_product: 1315324, product_name: "iMac M1 24", price: 169990, quantity: nil),
+                        Product(id_product: 3532311, product_name: "Mac mini M1", price: 118990, quantity: nil),
+                        Product(id_product: 3145114, product_name: "MacBook Pro 13 M1", price: 159990, quantity: nil)]
 
         return req.eventLoop.future(response)
     }
